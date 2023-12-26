@@ -26,8 +26,12 @@
     @media only screen and (max-width: 767px) {
       .hero__slider .hero__item {
         background-image: url('img/hero-2.png') !important;
-        /* Update the path to your mobile image */
+        background-size: cover;
+        /* Add this line to ensure the background covers the entire container */
+        /* padding-top: 80px; */
       }
+
+
     }
   </style>
 
@@ -40,32 +44,30 @@
   </div>
 
   <!-- Header Section Begin -->
-  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #100028;">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="header__logo">
-            <a href="./index.html">
-              <h3>Tushar Arora</h3>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-9">
-          <div class="header__nav__option">
-            <nav class="header__nav__menu mobile-menu">
-            </nav>
-            <div class="header__nav__social">
-              <a href="https://www.instagram.com/tussharr._?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
-              <a href="https://www.instagram.com/loneliestvibe?igshid=OGQ5ZDc2ODk2ZA=="><i
-                  class="fa fa-instagram"></i></a>
-              <a href="mailto:atushar606@gmail.com"><i class="fa fa-envelope"></i></a>
-              <a href="https://www.youtube.com/@loneliestvibe7790"><i class="fa fa-youtube-play"></i></a>
-            </div>
-          </div>
+      <a class="navbar-brand" href="./index.html">Tushar Arora</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Add your navigation links here -->
+          <!-- Example link: <li class="nav-item"><a class="nav-link" href="#">Link</a></li> -->
+        </ul>
+        <div class="navbar-text d-flex">
+          <a href="https://www.instagram.com/tussharr._?igshid=OGQ5ZDc2ODk2ZA==" class="nav-link"><i
+              class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/loneliestvibe?igshid=OGQ5ZDc2ODk2ZA==" class="nav-link"><i
+              class="fa fa-instagram"></i></a>
+          <a href="mailto:atushar606@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.youtube.com/@loneliestvibe7790" class="nav-link"><i class="fa fa-youtube-play"></i></a>
         </div>
       </div>
     </div>
-  </header>
+  </nav>
+
   <!-- Header End -->
 
   <!-- Hero Section Begin -->
